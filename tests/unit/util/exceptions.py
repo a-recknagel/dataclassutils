@@ -1,0 +1,2 @@
+class PostInitException(Exception):
+    pass

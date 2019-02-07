@@ -1,0 +1,12 @@
+[run]
+branch = True
+omit = */settings.py, */__init__.py, */__main__.py
+source = c11h.dataclassutils
+
+[paths]
+source = src/c11h/dataclassutils
+
+[report]
+ignore_errors = True
+precision = 2
+fail_under = 75

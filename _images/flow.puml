@@ -1,0 +1,21 @@
+@startuml
+
+|A Section|
+start
+:_pre_init;
+:_init_;
+:nesting initialization;
+|#AntiqueWhite|B Section|
+:_pre_init;
+:_init_;
+:nesting initialization;
+:type validation;
+:field validation;
+:_post_init_;
+|A Section|
+:type validation;
+:field validation;
+:_post_init_;
+stop
+
+@enduml

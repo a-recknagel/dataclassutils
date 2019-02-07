@@ -1,0 +1,18 @@
+stages:
+  - build
+  - lint
+  - test
+  - deploy
+
+include:
+    - project: 'common/templates/gitlabci_templates'
+      ref: master 
+      file: 'Templates/library.yml'
+
+flake8:
+  variables:
+    INPUT_FLAKE8: src tests
+
+mypy:
+  variables:
+    INPUT_MYPY: src/c11h
